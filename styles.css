@@ -4,6 +4,11 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+#gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* header styles start */
 
@@ -121,9 +126,6 @@ header{
 .gamer-title-1{
     font-size: 48px;
     font-weight: 700;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
 }
 .gamer-des{
@@ -150,6 +152,77 @@ header{
 
 
 
+/* Online section start */
+.online{
+    padding: 120px 240px;
+}
+.online-content{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.card-des{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 342px;
+}
+.online-card ul{
+    display:flex;
+    justify-content: space-between;
+}
+.online-card ul li{
+    list-style-type: none;
+}
+.image-container p{
+    color: #FF42A5;
+    font-size: 20px;
+    font-weight: 600;
+}
+.image-container i{
+    display: block;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper {
+    position: relative;
+  }
+  
+  .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-wrapper:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.3);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  /* Online section stop */
+
+
+  
 /* responsive for small devices */
 @media screen and (max-width:576px) {
     header{
@@ -192,7 +265,18 @@ header{
     .gamer-content{
         text-align: center;
     }
-    
+    .online{
+        padding: 30px;
+    }
+    .online-card ul{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .online-card p{
+        margin: 11px 0px 30px 11px;
+    }
+
 }
 
 
