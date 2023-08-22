@@ -222,6 +222,52 @@ header{
   /* Online section stop */
 
 
+  /* Sub-section-1 start */
+  .sub-section-1{
+    padding: 0px 240px 0px 240px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sub-section-1-content{
+    text-align: right;
+    width: 350px;
+    margin-top: 215px;
+    margin-left: 100px;
+  }
+  .sub-section-1-img .img-2{
+    display: block;
+    position: relative;
+    top: -290px;
+    left: -140px;
+  }
+  /* Sub-section-1 stop */
+
+
+  /* sub-section-2 start */
+  .sub-section-2{
+    display: flex;
+    padding: 0px 240px 0px;
+    margin-top: -150px;
+  }
+  .sub-section-2 .img-2{
+    position: relative;
+    display: block;
+    top: -250px;
+    left: 530px;
+  }
+  .sub-section-2-content{
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 240px;
+  }
+  .sub-section-2-content h3{
+    width: 440px;
+  }
+  .sub-section-2-content p{
+    width: 480px;
+  }
+  /* Sub-section-2 stop */
+  
   
 /* responsive for small devices */
 @media screen and (max-width:576px) {
@@ -276,7 +322,55 @@ header{
     .online-card p{
         margin: 11px 0px 30px 11px;
     }
-
+    .sub-section-1{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+      }
+      .sub-section-1-content{
+        text-align: center;
+        margin: 0;
+      }
+      .sub-section-1-img{
+        padding: 50px;
+      }
+      .sub-section-1-img .img-1{
+        width: 80%;
+        margin-left: 30px;
+      }
+      .sub-section-1-img .img-2{
+        width:30%;
+        top: 1;
+        left: 0;
+      }
+      .sub-section-2{
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -350px;
+      }
+      .sub-section-2-content h3{
+        text-align: center;
+        margin-left: -220px;
+        width: 300px;
+      }
+      .sub-section-2-content p{
+        text-align: center;
+        width: 300px;
+        margin-left: -220px;
+      }
+      .sub-section-2-img{
+        padding: 50px;
+      }
+      .sub-section-2-img .img-1{
+        width: 80%;
+        margin-left: 30px;
+      }
+      .sub-section-2-img .img-2{
+        width:30%;
+        top: 1;
+        left: 0;
+      }
 }
 
 
